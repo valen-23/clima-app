@@ -141,3 +141,18 @@ body {
     transform: rotate(360deg);
   }
 }
+
+@media screen and (max-width: 600px) {
+  #location {
+    font-size: 35px !important;
+  }
+
+  #date {
+    font-size: 20px;
+  }
+
+  #description {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+}
