@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Tiempo</title>
+    <link
+      rel="shortcut icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/a/a4/Sol_de_Mayo_Bandera_Argentina.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body onload="onLoad()">
+    <div id="loader" class="loader">Loading...</div>
+    <div id="container" class="contaier">
+      <div class="location_date">
+        <div id="location"></div>
+
+        <div id="date"></div>
+
+        <div id="description"></div>
+      </div>
+      <div class="information_container">
+        Temperatura:
+
+        <div class="information" id="temperature"></div>
+      </div>
+      <div class="information_container">
+        Humedad:
+
+        <div class="information" id="humidity"></div>
+      </div>
+      <div class="information_container">
+        Presión:
+
+        <div class="information" id="pressure"></div>
+      </div>
+    </div>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
