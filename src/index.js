@@ -1,3 +1,5 @@
+alert("si su ubicación no es detectada, refresque la página o compruebe que la ubicación esté activada");
+
 const onLoad = () => {
   navigator.geolocation.getCurrentPosition(fetchData)
 }
@@ -23,16 +25,12 @@ const setWeatherData = data => {
 
   Object.keys(weatherData).forEach(key => {
     setTextContent(key, weatherData[key]);
-
     cleanUp();
   });
 }
 
 const cleanUp = () => {
   let container = document.getElementById('container');
-  let loader = document.getElementById('loader');
-
-  loader.style.display = 'none';
   container.style.display = 'flex';
 }
 
